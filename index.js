@@ -1,4 +1,3 @@
-
 const discord = require('discord.js'),
 client = new discord.Client();
 const token = (process.env.TOKEN);
@@ -28,4 +27,5 @@ client.on('guildMemberAdd', member =>{
     let role = message.guild.roles.get("330100338042470404");
     member.addRole(role)
 });
+
 client.login(token);
